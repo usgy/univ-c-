@@ -1,0 +1,30 @@
++=============+=============+===========+=======+=======+=======+=======+
+| Atami       | Bandai      | s10000005 | no exercises                  |
+| Beko        | Aka         | s10000009 | no exercises                  |
+| Byakko      | Tai         | s10000011 | no exercises                  |
+| Choucreme   | Hirota      | s10000007 | no exercises                  |
+| En          | Oyaku       | s10000016 | no exercises                  |
++-------------+-------------+-----------+-------+-------+-------+-------+5
+| Hetsuri     | Tono        | s10000023 | no exercises                  |
+| Homare      | Aizu        | s10000020 | no exercises                  |
+| Iimori      | Yama        | s10000015 | no exercises                  |
+| Jiro        | Aizu        | s10000002 | no exercises                  |
+| Jo          | Tsuruga     | s10000010 | no exercises                  |
++-------------+-------------+-----------+-------+-------+-------+-------+10
+| Juku        | Ouchi       | s10000022 | no exercises                  |
+| Kan         | Nisshin     | s10000012 | no exercises                  |
+| Kitakata    | Ramen       | s10000008 | no exercises                  |
+| Kogen       | Bandai      | s10000006 | no exercises                  |
+| Nuri        | Aizu        | s10000003 | no exercises                  |
++-------------+-------------+-----------+-------+-------+-------+-------+15
+| Onsen       | Higashimaya | s10000018 | no exercises                  |
+| San         | Iide        | s10000017 | no exercises                  |
+| Shiroko     | Inawa       | s10000019 | no exercises                  |
+| Ski         | Nekoma      | s10000024 | no exercises                  |
+| Soba        | Shin        | s10000021 | no exercises                  |
++-------------+-------------+-----------+-------+-------+-------+-------+20
+| Taro        | Aizu        | s10000001 | no exercises                  |
+| Taro        | Kin         | s10000004 | no exercises                  |
+| Ujisato     | Gamo        | s10000014 | no exercises                  |
+| Yashiki     | Buke        | s10000013 | no exercises                  |
++=============+=============+===========+=======+=======+=======+=======+
