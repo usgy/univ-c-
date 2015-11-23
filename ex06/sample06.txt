@@ -1,0 +1,34 @@
+There are MORE THAN ONE MILLION online articles/textbooks/reference guides on 
+C++ language. That is because C++ is used extensively for a very long period of 
+time. You can find them using the Internet search engines like Google, Yahoo, 
+Lycos, Excite etc.. 
+
+  "C++ Annotations" online book main site: Annotations 
+  "Teach Yourself C++ in 21 days" online textbook Teach C++ 
+  C++ Textbook by Bruce Eckel Thinking in C++ 
+  C++ Open books: Panorama and click on Open Books. 
+  "Who's Afraid of C++?" online textbook: Steveheller 
+  "Introduction to Object Oriented Programming" an ebook C++ OOP 
+  C++ in Hypertext C++ Hypertext 
+  Object Oriented Systems OOP article 
+  C++ Language Reference from cplusplus.com http://www.cplusplus.com/ref 
+  C++ Documentation from cplusplus.com http://www.cplusplus.com 
+  Common C++ Pitfalls to be avoided http://www.horstmann.com/cpp/pitfalls.html 
+  Porting C++ to Java PortingC 
+  C/C++ Journals UtahJournals 
+  Yahoo C++ category site CCyahoo 
+  C Library Reference Guide c_guide 
+  Online textbooks C++/Java FreeLib 
+  "C++ In Action" by Bartosz Milewski at http://www.relisoft.com/book/index.htm 
+  Amusing examples of how not to write code. "How to write unmaintainable code" 
+  at http://mindprod.com/unmain.html 
+Java books which will be useful for C++ programmers: 
+  Great Web reference site WebRef 
+  Many Java books JBooks 
+  Intro to Java V3.0 JavaNotes mirror JavaNotes 
+  Web Library: http://www.itlibrary.com 
+  Thinking in Java: Thinking Java 
+  John Hopkins Univ - Java resources Hall 
+  online Java tutorial Chortle 
+  Practical guide for Java SunBooks 
+  Java Soton 
