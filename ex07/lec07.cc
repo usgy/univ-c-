@@ -17,7 +17,7 @@ int main(){
 	map<string, string> phonebook;
 	string s;
 	while(cin >> s){
-		++ phonebook[s];
+		phonebook[s];
 	}
 	for(map <string, string>::iterator iter = phonebook.begin(); iter!=phonebook.end(); ++iter){
 		cout << iter -> first << "¥t" << iter -> second << endl;
