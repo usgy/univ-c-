@@ -39,28 +39,28 @@ int main(){
 
       for( string::size_type i = 0 ; i != tmp.size() ; ++i ) {
         tmp[i] = tolower( tmp[i] );
-      }
-       
-      //最初の文字が記号ならば削る
-      if( tmp.size() > 1 ) {
-    if( !isalnum( tmp[ 0 ] ) ) {
-      tmp = tmp.substr( 1, tmp.size() - 1 );
     }
+       
+    //最初の文字が記号ならば削る
+    if( tmp.size() > 1 ) {
+      if( !isalnum( tmp[ 0 ] ) ) {
+        tmp = tmp.substr( 1, tmp.size() - 1 );
       }
+    }
        
-      //最後の文字が記号(+除く)ならば削る 
-      if( tmp.size() > 1 ) {
-    if( !isalnum( s[ tmp.size() - 1 ]) && tmp[ tmp.size() - 1 ] != '+' ) {
-       
-      tmp = tmp.substr( 0, tmp.size() - 1 );
-       
-      if( !isalnum( tmp[ tmp.size() - 1 ]) && 
-          tmp[ tmp.size() - 1 ] != '+' && 
-          tmp[ tmp.size() - 1 ] != '.' ) {
+    //最後の文字が記号(+除く)ならば削る 
+    if( tmp.size() > 1 ) {
+      if( !isalnum( s[ tmp.size() - 1 ]) && tmp[ tmp.size() - 1 ] != '+' ) {
          
         tmp = tmp.substr( 0, tmp.size() - 1 );
          
-      }
+        if( !isalnum( tmp[ tmp.size() - 1 ]) && 
+            tmp[ tmp.size() - 1 ] != '+' && 
+            tmp[ tmp.size() - 1 ] != '.' ) {
+           
+          tmp = tmp.substr( 0, tmp.size() - 1 );
+           
+        }
     }
       }
       counters[ tmp ].push_back( line_num );
