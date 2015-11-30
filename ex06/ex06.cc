@@ -3,7 +3,7 @@
   Outline: 文章を単語ごとに入力し、その単語の出現回数をアルファベット順に出力する
   Author: Yuta Sugii
   Student ID: s1220135
-  Date: 2015-11-10
+  Date: 2015-11-20
 */
 #include<iostream>
 #include<string>
@@ -34,7 +34,6 @@ string low(string);
 bool isAlphaWord(const WordCount&);
 bool isAboveAverage(const WordCount&);
  
- 
 int main(){
   vector<WordCount>words,alpha_words;
   vector<URL>urls; //URLを要素とするvector型の変数に記録
@@ -50,24 +49,24 @@ int main(){
     iter = words.begin();
  
     while(iter != words.end()){
-      //sがwordsのどれかの要素と同じ��豺�
+      //sがwordsのどれかの要素と同じ場合
       if((*iter).Word == s){
-    isFound = 1;
-    ++(*iter).Count;
-    break;
+        isFound = 1;
+        ++(*iter).Count;
+        break;
       }
       ++iter;
     }
  
     //sがwordsの要素に含まれていなければ、追加する
-    if(isFound == 0){
-      g.Word = s;
-      g.Count = 1;
-      words.push_back(g);
+      if(isFound == 0){
+        g.Word = s;
+        g.Count = 1;
+        words.push_back(g);
+      }
     }
-  }
    
-  //アルファベットのみの単語とそう瘢雹でないものをわける
+  //アルファベットのみの単語とそうでないものをわける
   iter2 = stable_partition(words.begin(), words.end(), isAlphaWord);
    
   //アルファベットのみからなる単語の平均出現頻度を求める
@@ -80,10 +79,10 @@ int main(){
   }
   ave = ave/k;
  
-  //単語の出現頻度が平均よりも高いかどう瘢雹か判定, iter3は境目になる
+  //単語の出現頻度が平均よりも高いかどうか判定, iter3は境目になる
   iter3 = stable_partition(words.begin(), iter2, isAboveAverage);
  
-  //URLかどう瘢雹かの判定
+  //URLかどうかの判定
   vector<WordCount>::iterator ur  = iter2;
   string::iterator iter_s;
   string sep = "://";
@@ -92,10 +91,10 @@ int main(){
     //
     iter_s = search((*ur).Word.begin(), (*ur).Word.end(), sep.begin(), sep.end());
     if(iter_s != (*ur).Word.end()){
-      //もしもURLだった��豺�,urlという瘢雹構造体にコピ・踉擦垢�
+      //もしもURLだった場合,urlという構造体にコピー
       copy((*ur).Word.begin(), iter_s, back_inserter(url.pro));
       copy(iter_s+3, (*ur).Word.end(), back_inserter(url.dom));
-      //urlの中身をurlsという瘢雹配列にコピ・踉擦垢�
+      //urlの中身をurlsにコピー
       urls.push_back(url);
       words.erase(ur);
     }
@@ -135,7 +134,7 @@ int main(){
 }
  
  
-//アルファベットについている記号を��覆①�臺源悊鬢苳皿文字にする
+//アルファベットについている記号を文字にする
 string low(string s){
   //isalnum()はアルファベットか数字なら、trueを返す関数
   while(!isalnum(s[0])){
@@ -154,7 +153,7 @@ string low(string s){
 }
  
  
-//文字列が記号かどう瘢雹か判断する
+//文字列が記号かどうか判断する
 bool isAlphaWord(const WordCount& w){
   for(string::size_type i = 0; i != w.Word.size(); i++){
     if(!isalpha(w.Word[i])) return false;
@@ -162,7 +161,7 @@ bool isAlphaWord(const WordCount& w){
   return true;
 }
  
-//出現頻度が平均よりも高いかどう瘢雹か判別する
+//出現頻度が平均よりも高いかどうか判別する
 bool isAboveAverage(const WordCount& w){
   if(w.Count > ave) return true;
   else return false;
