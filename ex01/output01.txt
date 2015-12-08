@@ -1,0 +1,7 @@
+Please input your surname
+Please input your given name
+**********************
+*                    *
+* Hello, Yuta Sugii! *
+*                    *
+**********************

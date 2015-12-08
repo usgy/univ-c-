@@ -1,0 +1,27 @@
+s10000001   Taro Aizu
+s10000002   Jiro Aizu
+s10000003   Nuri Aizu
+s10000004   Taro Kin
+s10000005   Atami Bandai
+s10000006   Kogen Bandai
+s10000007   Choucreme Hirota
+s10000008   Kitakata Ramen
+s10000009   Beko Aka
+s10000010   Jo Tsuruga
+s10000011   Byakko Tai
+s10000012   Kan Nisshin
+s10000013   Yashiki Buke
+s10000014   Ujisato Gamo
+s10000015   Iimori Yama
+s10000016   En Oyaku
+s10000017   San Iide
+s10000018   Onsen Higashimaya
+s10000019   Shiroko Inawa
+s10000020   Homare Aizu
+s10000021   Soba Shin
+s10000022   Juku Ouchi
+s10000023   Hetsuri Tono
+s10000024   Ski Nekoma
+s1220135 杉井 雄汰
+s12345678912345678912345 AIUEOabcdeKAKIKUKEKOfghij AIUEOabcdeKAKIKUKEKOfghij 
+
