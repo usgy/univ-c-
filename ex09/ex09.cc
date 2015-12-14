@@ -11,6 +11,7 @@ Prog-Name: ex09.cc
 #include <iomanip>
 #include <algorithm>
 #include <stdexcept>
+#include <iterator>
  
 using namespace std;
  
@@ -38,22 +39,17 @@ private:
   vector<double> Homework;
 };
  
- 
+//宣言文
 bool compare(const Student_info&, const Student_info&);
- 
 istream& read_hw(istream&, vector<double>&);
- 
 double median(vector<double>);
  
 //メンバ関数の定義
  
-Student_info::Student_info(): Midterm(0),Final(0){};
-Student_info::Student_info(istream& is){read(is);};
- 
- 
-//適切なコードを書く
+Student_info::Student_info(): Midterm(0),Final(0){}
+Student_info::Student_info(istream& is){read(is);}
 std::istream& Student_info::read(std::istream& is){
-   
+   //適切なコードを書く
   is >> ID >> FirstName >> LastName >>Midterm >> Final;
   read_hw(is, Homework);
   return is;
@@ -125,54 +121,54 @@ int main(){
   }
    
   sort(students.begin(), students.end(), compare);
-  // //出力
-  // for(vector<Student_info>::size_type i = 0; i!= students.size(); ++i){
+  //出力
+  for(vector<Student_info>::size_type i = 0; i!= students.size(); ++i){
      
-  //   students[i].grade();
+    students[i].grade();
      
-  //   idnum = 9 - students[i].id().size();
+    idnum = 9 - students[i].id().size();
      
-  //   finum = 11 - students[i].first_name().size();
+    finum = 11 - students[i].first_name().size();
      
-  //   secnum = 11 - students[i].last_name().size();
+    secnum = 11 - students[i].last_name().size();
      
-  //   cout << "|" << students[i].first_name();
+    cout << "|" << students[i].first_name();
       
-  //    for(j = 1;j<finum;j++){
+     for(j = 1;j<finum;j++){
         
-  //      cout<<" ";
+       cout<<" ";
         
-  //    }
+     }
       
-  //    // 姓を出力
-  //    cout<<" |" << students[i].last_name();
+     // 姓を出力
+     cout<<" |" << students[i].last_name();
       
-  //    for(j = 1; j<secnum;j++){
-  //      cout<<" ";
-  //    }
+     for(j = 1; j<secnum;j++){
+       cout<<" ";
+     }
       
-  //    // IDを入力
-  //    cout<<" |"<< students[i].id();
+     // IDを入力
+     cout<<" |"<< students[i].id();
      
-  //   for(j = 1;j<idnum;j++){
-  //     cout<<" ";
-  //   }
+    for(j = 1;j<idnum;j++){
+      cout<<" ";
+    }
      
-  //   //数字にする
-  //   cout.setf(ios::fixed,ios::floatfield);
-  //   cout.setf(ios::showpoint);
+    //数字にする
+    cout.setf(ios::fixed,ios::floatfield);
+    cout.setf(ios::showpoint);
      
-  //   cout<<"|";
+    cout<<"|";
      
-  //   cout<<setw(5)<<setprecision(1)<<students[i].ex()<<"|";
-  //   cout<<setw(5)<<setprecision(1)<<students[i].total()<<"|" << endl;
+    cout<<setw(5)<<setprecision(1)<<students[i].ex()<<"|";
+    cout<<setw(5)<<setprecision(1)<<students[i].total()<<"|" << endl;
      
-  //   ++count;
+    ++count;
      
-  //   if(count % 5 ==  0){
+    if(count % 5 ==  0){
        
-  //     cout<< "+-----------+-----------+---------+-----+-----+ " << count << endl;      
-  //   }   
-  // }
-  // cout<< "+===========+===========+=========+=====+=====+" << endl;
+      cout<< "+-----------+-----------+---------+-----+-----+ " << count << endl;      
+    }   
+  }
+  cout<< "+===========+===========+=========+=====+=====+" << endl;
 }
