@@ -44,8 +44,7 @@ bool compare(const Student_info&, const Student_info&);
 istream& read_hw(istream&, vector<double>&);
 double median(vector<double>);
  
-//メンバ関数の定義
- 
+//メンバ関数の定義 
 Student_info::Student_info(): Midterm(0),Final(0){}
 Student_info::Student_info(istream& is){read(is);}
 std::istream& Student_info::read(std::istream& is){

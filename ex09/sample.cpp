@@ -1,3 +1,8 @@
+/*
+Name: Yuta Sugii
+Number: s1220135
+Prog-Name: ex09_1.cc
+*/
 #include <iostream>
 #include <string>
 #include <algorithm>
@@ -142,3 +147,4 @@ bool compare(const Student_info& x, const Student_info& y)
     else //名前が同名であった場合
         return (x.last_name() < y.last_name()); //辞書順でyの名前が早い場合1、そうでなければ0を返す
 }
+
