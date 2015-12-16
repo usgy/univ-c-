@@ -1,0 +1,6 @@
+abcdefghdjahfijldshfadhsfuiasyf
+
+/*
+$ ./a.out abcdefghdjahfijldshfadhsfuiasyf
+ABCDEFGHDJAHE/MAN:
+*/

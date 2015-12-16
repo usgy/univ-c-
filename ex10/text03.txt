@@ -1,0 +1,5 @@
+$ ./a.out abc
+abc
+a.out(3695,0x7fff720f5000) malloc: *** error for object 0x7fb7dbc03268: pointer being freed was not allocated
+*** set a breakpoint in malloc_error_break to debug
+Abort trap: 6

@@ -1,0 +1,6 @@
+a
+
+/*
+$ ./a.out a
+AMANPAT
+*/
