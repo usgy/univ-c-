@@ -8,6 +8,9 @@
 
 #include <memory>
 #include <algorithm>
+#include <iostream>
+
+using namespace std;
 
 template<class T>
 class Vec{
@@ -57,6 +60,11 @@ template <class T>
 Vec<T>& Vec<T>::operator=(const Vec& rhs)
 {
   //  Put source code below
+    if (&rhs != this) {
+      uncreate();
+      create(rhs.begin(), rhs.end());
+    }
+    return *this;
 }
 
 /*
@@ -67,6 +75,7 @@ template <class T>
 void Vec<T>::create()
 {
   //  Put source code below
+   data = limit = avail = 0;
 }
 
 /*
@@ -77,6 +86,9 @@ template <class T>
 void Vec<T>::create(size_type n, const T& val)
 {
   //  Put source code below
+  data = alloc.allocate(n); 
+  limit = avail = data + n;
+  std::uninitialized_fill(data, limit, val);
 }
 
 /*
@@ -87,6 +99,8 @@ template <class T>
 void Vec<T>::create(const_iterator i, const_iterator j)
 {
   //  Put source code below
+  data = alloc.allocate(j - i);
+  limit = avail = std::uninitialized_copy(i, j, data);
 }
 
 /*
@@ -97,6 +111,12 @@ template <class T>
 void Vec<T>::uncreate()
 {
   //  Put source code below
+  if (data) {
+      iterator it = avail;
+      while (it != data) alloc.destroy(--it);
+      alloc.deallocate(data, limit - data);
+    }
+    data = limit = avail = 0;
 }
 
 /*
@@ -107,6 +127,13 @@ template <class T>
 void Vec<T>::grow()
 {
   //  Put source code below
+  size_type new_size = max(2 * (limit - data), ptrdiff_t(1));
+  iterator new_data = alloc.allocate(new_size);
+  iterator new_avail = std::uninitialized_copy(data, avail, new_data);
+  uncreate();
+  data = new_data;
+  avail = new_avail;
+  limit = data + new_size;
 }
 
 /*
@@ -117,6 +144,7 @@ template <class T>
 void Vec<T>::unchecked_append(const T& val)
 {
   //  Put source code below
+  alloc.construct(avail++, val);
 }
 
 /*
