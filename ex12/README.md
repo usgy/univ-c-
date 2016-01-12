@@ -19,9 +19,9 @@ s1:[]
 s2:[aaaaaaaa]  
 s3:[Hello! How are you?]  
 s4:[Hello! How are you?]  
-#1: s3 is same as s4  
+\#1: s3 is same as s4  
 s4:[hello! How are you?]  
-#1: s3 is different from s4  
+\#1: s3 is different from s4  
 Finished  
   
 ### テストの方法  
