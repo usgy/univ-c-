@@ -5,7 +5,7 @@ C++ Lectures, Homework, and Programming Assignments at the university of Aizu
 　This is the repository to store my University of Aizu C++ Cource Homework solutions.
 
 ### Solution
-|List of the Homework||Total 14 assignments|
+|List of the Homework|Total 14 assignments|
 |:------|:-------|
 |[Homework 1 - using string](ex01/)|[Homework 2 - Loop and Counter](ex02/)|
 |[Homework 3 - Using Many Data](ex03/)|[Homework 4 - Program and Data structure](ex04/)|
